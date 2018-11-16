@@ -1,0 +1,78 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+}
+body {
+    background: #fff; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: 'Cardo', 'Times New Roman', serif;
+    margin: 1rem;
+}
+
+article {
+    padding: 20px; /* keep */
+    margin: auto; /* keep */
+    border: 1px solid; /* can delete or change */
+    background-color: #fff;
+    max-width: 800px;
+    /* display: flex;
+    align-items: center; */
+}
+
+
+#albums{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.album-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 49%;
+}
+h1 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  text-align: center;
+}
+
+#bigpicture {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+img {
+  display: block;
+  padding: 1em;
+  margin: 0;
+}
+
+audio {
+  display: block;
+
+}
+
+
+@media screen and (max-width: 730px){
+  article {
+      width: 100%;
+}
+
+.album-box{
+  flex-basis: 100%;
+}
+
+img {
+  padding: 0.5em;
+}
+
+p {
+  padding: 0;
+}
+}
